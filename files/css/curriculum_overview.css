@@ -5,8 +5,9 @@ main ul {
 }
 
 main li {
-    font-size: 1.15em;
     margin-bottom: 1em;
+    margin-left: 2em;
+    font-size: 1.15em;
 }
 
 .classroom {
@@ -23,4 +24,8 @@ main li {
 
 .classroom p {
     font-size: 1.15em;
+}
+
+.subheading {
+    margin-top: 3em;
 }
