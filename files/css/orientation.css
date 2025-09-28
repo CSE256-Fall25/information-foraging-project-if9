@@ -1,0 +1,12 @@
+@import url("common.css");
+@import url("side_menu.css");
+
+main ul {
+    margin-top: 1em;
+}
+
+main li {
+    margin-bottom: 1em;
+    margin-left: 2em;
+    font-size: 1.15em;
+}
