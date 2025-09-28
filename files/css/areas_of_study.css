@@ -1,0 +1,83 @@
+@import url("common.css");
+@import url("side_menu.css");
+@import url("staff_entry.css");
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin-top: 1em;
+}
+
+.tab-content li {
+    margin-bottom: 0.5em;
+    margin-left: 2em;
+    font-size: 1.15em;
+}
+
+p {
+    font-size: 1.15em;
+}
+
+.page-layout {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.subnav-wrapper {
+    display: block;
+}
+
+.widget-area {
+    position: sticky;
+    z-index: 999;
+    width: 275px;
+    padding: 10px;
+    top: 90px;
+    border-right: 1px solid #ddd;
+}
+
+.subnav {
+    list-style: none;
+    font-family: "Times New Roman", Times, serif;
+    padding: 0;
+    margin: 0;
+}
+
+.subnav .children a {
+    padding: 16px;
+    text-decoration: none;
+    color: #333;
+    border-radius: 2px;
+}
+
+.subnav .children a:hover {
+    background-color: #eee;
+}
+
+.subnav .children a.active {
+    font-weight: bold;
+    color: #fff;
+    background-color: #900;
+}
+
+.content-area {
+    flex: 1;
+    padding: 20px;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.tab-link.active {
+    font-weight: bold;
+    color: #900;
+}
