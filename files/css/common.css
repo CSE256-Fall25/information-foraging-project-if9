@@ -18,7 +18,8 @@ main div {
 }
 
 #page-content {
-    display: table;
+    display: flex;
+    justify-content: center;
     clear: both;
     width: 100%;
 }
