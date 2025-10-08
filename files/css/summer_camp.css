@@ -1,4 +1,110 @@
 @import url("common.css");
+
 .image-container {
-    background-image: url("https://nurseryschool.wustl.edu/files/2015/03/group-holi.jpg");
+  background-image: url("https://nurseryschool.wustl.edu/files/2015/03/group-holi.jpg");
+}
+
+.hero-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.left-col {
+  flex: 1 1 640px;
+  min-width: 0;
+}
+
+.right-col {
+  flex: 0 0 320px;
+}
+
+.small-note {
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.callout {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(180px, 1fr));
+  gap: 0.75rem;
+  margin: 0.75rem 0 1rem 0;
+}
+
+.callout-item {
+  border: 1px solid #a51417;
+  border-radius: 6px;
+  padding: 0.6rem 0.75rem;
+  background: #fff;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.04);
+}
+
+.callout-title {
+  font-size: 0.85rem;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #a51417;
+  margin-bottom: 0.25rem;
+}
+
+.callout-body {
+  font-size: 1rem;
+  line-height: 1.35;
+  color: #555;
+}
+
+.section-label {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #3d3d3d;
+  margin-top: 1.25rem;
+  margin-bottom: 0.4rem;
+  padding-left: 0.6rem;
+  border-left: 4px solid #a51417;
+}
+
+.logo-img {
+  display: block;
+  margin: 0 auto 1rem auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.tight-hr {
+  margin: 12px 0;
+}
+
+.mt-tight {
+  margin-top: 12px;  
+}
+
+.hero-row p { margin-bottom: 14px; }
+
+@media (max-width: 900px) {
+  .hero-row {
+    flex-direction: column;
+  }
+  .right-col {
+    width: 100%;
+    flex: 0 0 auto;
+    order: -1;
+  }
+  .gallery { grid-template-columns: repeat(3, 1fr); }
+  .callout { grid-template-columns: 1fr; }
 }
