@@ -151,3 +151,65 @@ header a {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+/* Nesed Dropdown Styling */
+/* Container for nested dropdown (inside dropdown-content) */
+.sub-dropdown {
+    position: relative;
+}
+
+/* Submenu button inherits base styles */
+.sub-dropbtn {
+    background-color: inherit;
+    border: none;
+    color: black;
+    padding: 12px 16px;
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Style the nested dropdown menu */
+.sub-dropdown-content {
+    display: none;
+    position: absolute;
+    left: 100%;   /* Opens to the right of the parent menu */
+    top: 0;
+    background-color: #f9f9f9;
+    min-width: 280px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Show nested dropdown on hover */
+.sub-dropdown:hover .sub-dropdown-content {
+    display: block;
+}
+
+/* Hover states */
+.sub-dropdown:hover .sub-dropbtn {
+    background-color: #ddd;
+}
+
+/* Make sure nested links look consistent */
+.sub-dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 12px 16px;
+}
+
+.sub-dropdown-content a:hover {
+    background-color: #eee;
+}
+
+.caret-right {
+  float: right;
+  margin-left: 8px;
+  font-size: 0.7em;
+}
+
+.has-submenu:hover .caret-right {
+  transform: rotate(90deg);
+}
