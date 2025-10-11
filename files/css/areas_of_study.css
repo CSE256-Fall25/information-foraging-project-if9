@@ -7,8 +7,14 @@ body {
     padding: 0;
 }
 
-ul {
+main ul {
     margin-top: 1em;
+}
+
+main li {
+    margin-bottom: 1em;
+    margin-left: 2em;
+    font-size: 1.15em;
 }
 
 .tab-content li {
