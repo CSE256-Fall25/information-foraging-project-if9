@@ -109,3 +109,43 @@ main hr {
     background-color: #eee;
     height: 1px;
 }
+
+.btn{
+    color: #a51417;
+    border: #a51417;
+    border-width: 2px;
+    border-radius: 6px;
+    border-style: solid;
+    font-size: 1rem;
+    line-height: 1.1;
+    padding: 8px 20px;
+}
+
+.callout {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(180px, 1fr));
+  gap: 0.75rem;
+  margin: 0.75rem 0 1rem 0;
+}
+
+.callout-item {
+  border: 1px solid #a51417;
+  border-radius: 6px;
+  padding: 0.6rem 0.75rem;
+  background: #fff;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.04);
+}
+
+.callout-title {
+  font-size: 0.85rem;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #a51417;
+  margin-bottom: 0.25rem;
+}
+
+.callout-body {
+  font-size: 1rem;
+  line-height: 1.35;
+  color: #555;
+}
