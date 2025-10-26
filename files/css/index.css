@@ -149,3 +149,12 @@ main hr {
   line-height: 1.35;
   color: #555;
 }
+
+.summer-camp-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4em;
+    margin-bottom: 4em;
+    padding: 2em;
+}
